@@ -11,13 +11,13 @@ body::before{content:"to kak zizi";color:white;opacity:.3;font-size:2vw;position
 
 @keyframes leaves {0% {transform: scale(1.0);} 100% {transform: scale(.8);}}
 #lope, .lopdeg{animation: leaves 1s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;}
-.lovein:hover{transform: scale(1.3);} .kliklov{transition:all 5s ease;} .kliklov:hover{opacity:.5;}
+.lovein:hover{transform: scale(1.3);} .kliklov{transition:all 3s ease;} .kliklov:hover{opacity:.5;}
 
 @keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
 blockquote, #idakhir, #idakhirdua{position:relative;opacity:.8;margin-left:0;margin-right:0;}
 blockquote, #idakhir, #idakhirdua{color:#fff;font-size:14px;font-weight:400;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);text-align:center;padding:20px 30px 20px 30px;border: 1px dashed #fff;border-radius:8px;transition:all .2s ease;}
 blockquote p:last-child, #idakhirdua{font-size:17px;font-weight:700;}
-#idakhir, #idakhirdua{opacity:0;border:0;animation-name:none;animation-duration: 7s;animation-iteration-count: infinite;}
+#idakhir, #idakhirdua{opacity:0;border:0;animation-name:none;animation-duration: 5s;animation-iteration-count: infinite;}
 
 #pergeseran{margin-top:50px;transition:all 2s ease;display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;position:relative;max-width:500px;padding:0 20px; overflow-y:hidden;overflow-x:scroll;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch}
 #pergeseran p{background:rgba(0, 0, 0, .5);color:white;border: 1px dashed #fff;border-radius:8px;padding:8px;display:flex;flex-wrap:nowrap;text-align:center;font-size:14px;font-weight:700;align-items:center;justify-content:center;flex-shrink:0; width:90%; min-height:100px;margin:0 15px 0 0; scroll-snap-align:center} #pergeseran > *:last-child{margin-right:0} #pergeseran:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
