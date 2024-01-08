@@ -1,0 +1,96 @@
+<html>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<head>
+</head>
+
+<body>
+  <div id="bodyblur"><img id="wp" src="" width="100%" height="100%"/></div>
+
+<!-- Isi Konten -->
+  <div id='Content'>
+<div class="image"><img id="idmail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhakATy4q7uCULCJTD7jlywtYRD4TmKMqQg&usqp=CAU" onClick='showAkhir();play();this.onclick=null;'/></div>
+<!-- Gambar Bergerak --><div class="image"><img id="idfoto" src="dino.gif"/></div><!--<div id="sp1"></div>-->
+<p id="idgeser"> click this!!</p>
+
+<div id="idakhir"></div><div id="idakhirdua"></div>
+<p id="idkirim" onClick="menuju();">[ Kirim Pesan ]</p>
+</div>
+
+<input class='chatMenu hidden' id='offchatMenu' type='checkbox' />
+<div class='chatBox'>
+  <div id='data' class='chatContent'>
+    <div class='chatText'>
+      <!-- Pesan -->
+      <span id='text1'>Hallo mbak zizi♡</span>
+      <span id='text2'>how's your day</span>
+      <span id='text3'>hope you're fine and have a great day</span>
+      <span id='text4'>this a message for u,hope like it </span>
+      <span id='text5' class='typing' onclick="selesai();ketik();">[click this ><]</span>
+    </div>
+  </div>
+</div>
+<script>
+     function showDiv() {document.getElementById('idmail').style = "opacity:1;transform:scale(1);";document.getElementById('Content').style.opacity = "1";document.getElementById('Content').style.margin = "0";document.getElementById('idfoto').style.height = "0px";} function nonDiv(){document.getElementById('Content').style.display = "none";}
+     function showAkhir(){document.getElementById('idmail').style = "transform:scale(.01);opacity:0;";document.getElementById('idgeser').style.display = "none";setTimeout(memulai, 1000);}
+     function memulai() {teks1();document.getElementById('idmail').style.display = "none";document.getElementById('idakhir').style = "opacity:1;";document.getElementById('idakhir').style.animation = "kont 3s infinite";document.getElementById('idfoto').style.height = "150px";}
+     function showTom() {document.getElementById('idkirim').style = "opacity:1;visibility:visible;margin-top:90px;";}
+     function scroll(){var objDiv = document.getElementById("data");objDiv.scrollTop = objDiv.scrollHeight;}
+     function selesai() {document.getElementById("offchatMenu").checked = false;document.getElementById('wp').style = "animation-name:jblur;"}
+
+    function teks1(){document.getElementById("offchatMenu").checked = true;document.getElementById('text1').style.display = "inline-block";setTimeout(teks2,5300);}
+  function teks2(){document.getElementById('text2').style.display = "inline-block";setTimeout(teks3,5300);scroll()}
+  function teks3(){document.getElementById('text3').style.display = "inline-block";setTimeout(teks4,5300);scroll()}
+  function teks4(){document.getElementById('text4').style.display = "inline-block";setTimeout(teks5,4300);scroll()}
+  function teks5(){document.getElementById('text5').style.display = "block";scroll();}
+
+     var i=0,katakhir;katakhir = "";
+     function ketik() {if(i<katakhir.length){document.getElementById("idakhir").innerHTML += katakhir.charAt(i);i++;setTimeout(ketik,100);}
+       if(i==katakhir.length){ketikk();document.getElementById("idakhir").innerHTML = katakhir;document.getElementById('idakhirdua').style = "opacity:1;animation:kont 9s infinite;";}
+     }
+     var u=0,katakhirdua;katakhirdua = "";
+     function ketikk() {if(u<katakhirdua.length){document.getElementById("idakhirdua").innerHTML += katakhirdua.charAt(u);u++;setTimeout(ketikk,200);}
+       if(u==katakhirdua.length){setTimeout(showTom,1000);document.getElementById('idfoto').style = "opacity:1;transform:scale(1);";}
+     }
+
+     async function menuju(){
+await swals.fire({
+  title: '<strong>script?</strong>',
+  html:
+    'Cek scriptnya di ' +
+    'ya!' + '<br><br>' + 'Bisa diedit.',
+  focusConfirm: false,
+});
+window.location = "https://";
+} 
+</script>
+
+<!-- Kata Akhir dan Audio --><script type="text/javascript">
+function play() {var audio = new 
+Audio('bgm.mp3');audio.play();}
+
+      const swals = Swal.mixin({backdrop: 'rgba(0,0,123,0.4)', allowOutsideClick: false, cancelButtonColor: '#FF0040',});
+      const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,});
+      const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 400, timerProgressBar: true,});
+
+      async function mulaipop(){
+      await swalst.fire({
+           title: 'Tunggu yaa~',
+           });
+           emotsenyum = "&#9829; &#9829; &#9829;";
+           katakhir = " Hallo mbak zizi!! ga kerasa udah 1 periode SIM udah habis, meski anak kominfo jarang ketemu but..thanks for choosing me to be part of this departement. Thanks for all the good things , dari proker, keseruan pas ketemu, dan mbak zi mau luangin waktu buat backup proker disela kesibukan. Terimakasih udah jajain kominfo dan banyak hal baik lainnya..oiya thanks juga udah jengukin pas di rs, its mean a lot for me, mbak zizi banyakin makan juga yaa, stay healthy. Semoga kebaikan mbak zizi dibalas lebih oleh Allah SWT.. Jazakumullah Khairan";
+           katakhirdua = " from via to mbak zizi ༘ ♡ ";
+
+           showDiv();
+
+       }   mulaipop();
+
+async function menuju(){window.location = "https://api.whatsapp.com/send?phone=&text=thanks ><";}
+</script>
+</body>
+                     </html>
