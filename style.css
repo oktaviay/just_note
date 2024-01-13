@@ -2,12 +2,11 @@
   width: 100%;
 }
 body{background-color:#101010;font-family: 'Ubuntu', sans-serif;padding: 25px} a{text-decoration:none;}
-body::before{content:"html nmaa";color:white;opacity:.3;font-size:2vw;position:fixed;bottom:25px;left:25px;}
 body::before{content:"to kak zizi";color:white;opacity:.3;font-size:2vw;position:fixed;bottom:25px;left:25px;}
 #bodyblur{display:block;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;}
 @keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
 @keyframes jblur{0%  {opacity:.47} 50% {opacity:.4} 100% {opacity:.47}}
-@ -15,11 +15,11 @@ body::before{content:"html nmaa";color:white;opacity:.3;font-size:2vw;position:f
+@ -15,11 +15,11 @@ body::before{content:"to kak zizi";color:white;opacity:.3;font-size:2vw;position:f
 
 @keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
 blockquote, #idakhir, #idakhirdua{position:relative;opacity:.8;margin-left:0;margin-right:0;}
